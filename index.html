@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo Genético - Dinâmica Interativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Algoritmo Genético: Passo a Passo</h1>
+            <p>Siga as instruções, lance moedas e dados virtuais como se estivesse no quadro da sala de aula!</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Painel Interativo de Trabalho -->
+            <div class="workspace">
+                <div class="phase-header">
+                    <h2 id="phase-title">Fase: Iniciando</h2>
+                    <span id="phase-progress" class="badge"></span>
+                </div>
+                <div id="interactive-area" class="interactive-area">
+                    <!-- O conteúdo dinâmico do passo-a-passo entra aqui -->
+                </div>
+            </div>
+
+            <!-- Painel de Visão Geral -->
+            <div class="overview">
+                <h2>População (Geração <span id="gen-counter">0</span>)</h2>
+                <div class="stats">
+                    <div class="stat-box">Apt. Média<br><b id="avg-fitness">0.00</b></div>
+                    <div class="stat-box">Melhor Apt.<br><b id="best-fitness">0</b></div>
+                </div>
+                <table id="population-table">
+                    <thead>
+                        <tr><th>Ind.</th><th>Cromossomo</th><th>Apt</th></tr>
+                    </thead>
+                    <tbody id="population-body">
+                    </tbody>
+                </table>
+                <div id="parents-pool-container" style="display:none; margin-top:20px;">
+                    <h3 style="margin-bottom: 10px; font-size: 14px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Piscina de Pais</h3>
+                    <div id="parents-pool" class="parents-pool"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
